@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_foreground"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/emailInput"
+        android:layout_marginBottom="60dp"
+        android:id="@+id/logoLogin"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Burger Queen"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#F00"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/emailInput"
+        android:layout_marginBottom="40dp"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:paddingHorizontal="60dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/loginBtn"
+        android:textColor="@color/white"
+        android:background="@drawable/button_transparent"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/passInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/loginBtn"
+        android:layout_marginBottom="30dp"
+        android:hint="Enter Password"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/grey"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/baseline_password_24"
+        android:drawablePadding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/passInput"
+        android:layout_marginBottom="30dp"
+        android:inputType="textPassword"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/grey"
+        android:hint="Enter Email"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New User ? "
+        android:id="@+id/newUserText"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@+id/loginBtn"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:id="@+id/toSignup"
+        android:layout_below="@+id/loginBtn"
+        android:layout_toRightOf="@+id/newUserText"
+        android:layout_marginTop="45dp"
+        android:textColor="@color/blue"
+        android:onClick="goToSignup"
+        android:textSize="15dp"
+        />
+
+</RelativeLayout>

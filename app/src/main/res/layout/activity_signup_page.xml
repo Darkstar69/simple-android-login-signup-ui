@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupPage"
+    android:background="@color/black"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_foreground"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:id="@+id/burgerLogo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Burger Queen"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#F00"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/burgerLogo"
+        android:id="@+id/branding"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter you name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/branding"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="15dp"
+        android:paddingHorizontal="20dp"
+        android:id="@+id/nameInput"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter you email"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nameInput"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="15dp"
+        android:paddingHorizontal="20dp"
+        android:id="@+id/emailInput"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/emailInput"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/baseline_local_phone_24"
+        android:drawablePadding="15dp"
+        android:paddingHorizontal="20dp"
+        android:id="@+id/phoneInput"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/phoneInput"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="15dp"
+        android:paddingHorizontal="20dp"
+        android:id="@+id/passwordInput"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="confirm password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/passwordInput"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="15dp"
+        android:paddingHorizontal="20dp"
+        android:id="@+id/confpasswordInput"
+        />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_transparent"
+    android:text="Signup"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/SignupBtn"
+    android:layout_below="@id/confpasswordInput"
+    android:layout_marginTop="20dp"
+    android:paddingHorizontal="70dp"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already an user ? "
+        android:id="@+id/alreadyUserText"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@+id/SignupBtn"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/toLogin"
+        android:layout_below="@+id/SignupBtn"
+        android:layout_toRightOf="@+id/alreadyUserText"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/blue"
+        android:onClick="goToLogin"
+        android:textSize="15dp"
+        />
+
+
+</RelativeLayout>
